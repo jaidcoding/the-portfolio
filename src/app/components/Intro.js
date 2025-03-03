@@ -13,8 +13,8 @@ export default function Intro() {
       transition={{ duration: 0.5 }}
       className="w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
     >
-      <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mb-4 sm:mb-8">
-        <div className="flex-1 text-center sm:text-left">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4 sm:mb-8 max-w-2xl mx-auto">
+        <div className="text-center">
           <h1 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-6 text-gray-800">
             Hi, my name is Jaidon
           </h1>
@@ -33,10 +33,12 @@ export default function Intro() {
             />
           </div>
         </div>
-        <CyclingAvatar />
+        <div className="sm:ml-4">
+          <CyclingAvatar />
+        </div>
       </div>
 
-      <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-8">
+      <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12 md:mb-16 max-w-2xl mx-auto text-center">
         I have a passion for software development and building things for the web. 
         I thrive on challenges and love to code. My main focus is Frontend Development, 
         but I'm also interested in Backend Development and Mobile Development.

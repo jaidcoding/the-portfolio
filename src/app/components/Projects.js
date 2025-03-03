@@ -5,14 +5,15 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: "Flare48",
-    description: "Flare48 is a platform to view news articles from around the world that are only from the past 48 hours.",
+    description: "Flare48 is a platform to view news articles from around the world that are only from the past 48 hours. It uses the NewsAPI to get the news data. It also uses the Geocoding API to get the latitude and longitude of the city.",
     link: "https://flare48-6c1x.onrender.com",
     video: "/videos/Flare48Clip.mp4"
   },
   {
-    title: "Project Name 2",
-    description: "Another project description. Keep it concise but informative.",
-    link: "https://your-project-url.com",
+    title: "Weather Dashboard",
+    description: "A weather dashboard that allows you to search for the weather in any city in the world. It uses the OpenWeather API to get the weather data. It also uses the Geocoding API to get the latitude and longitude of the city.",
+    link: "https://jaidcoding.github.io/Weather-Dashboard/",
+    video: "/videos/WeatherApp.mp4"
   },
 ];
 
@@ -35,10 +36,10 @@ export default function Projects() {
               whileHover={{ y: -5 }}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 group-hover:shadow-xl">
-                <div className="relative aspect-video w-full bg-neutral-100 flex items-center justify-center">
+                <div className="relative aspect-[16/10] w-full bg-neutral-100 flex items-center justify-center">
                   {project.video ? (
                     <video
-                      className="w-full h-full object-contain"
+                      className="w-full h-full object-cover"
                       autoPlay
                       muted
                       loop
