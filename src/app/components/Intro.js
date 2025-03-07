@@ -46,16 +46,10 @@ export default function Intro() {
 
       <div id="experience">
         <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800">My Experience</h2>
-        <ol className="relative border-s ml-2 border-gray-200 dark:border-gray-700">                  
-          <li className="mb-4 sm:mb-10 ms-4">
-            <div className="absolute w-2 h-2 sm:w-3 sm:h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-xs sm:text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2025 - Present</time>
-            <h3 className="text-base sm:text-lg font-semibold text-gray-900">Audio Engine</h3>
-            <p className="mb-2 sm:mb-4 text-xs sm:text-base font-normal text-gray-500 break-words">At Audio Engine, I am responsible for developing the frontend for the company's website. I also work with the company's IT department and customer service team to ensure the website is always up to date and running smoothly.</p>
-          </li>
+        <ol className="relative border-s ml-2 border-gray-200 dark:border-gray-700">              
           <li className="ms-4">
             <div className="absolute w-2 h-2 sm:w-3 sm:h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-xs sm:text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2023 - March 2025</time>
+            <time className="mb-1 text-xs sm:text-sm font-normal leading-none text-gray-400 dark:text-gray-500">August 2023 - Now</time>
             <h3 className="text-base sm:text-lg font-semibold text-gray-900">Geek Squad Technician</h3>
             <p className="text-xs sm:text-base font-normal text-gray-500 break-words">At Geek Squad, I was responsible for providing technical support to customers. I worked on a variety of devices, including laptops, desktops, and smartphones. I also worked on networking and security issues.</p>
           </li>
