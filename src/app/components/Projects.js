@@ -6,15 +6,22 @@ const projects = [
   {
     title: "Flare48",
     description: "Flare48 is a platform to view news articles from around the world that are only from the past 48 hours. It uses the NewsAPI to get the news data. It also uses the Geocoding API to get the latitude and longitude of the city.",
-    link: "https://flare48-6c1x.onrender.com",
-    video: "/videos/Flare48Clip.mp4"
+    link: "https://flare48.onrender.com",
+    video: "/videos/Flare48.mp4"
   },
   {
-    title: "Weather Dashboard",
-    description: "A weather dashboard that allows you to search for the weather in any city in the world. It uses the OpenWeather API to get the weather data. It also uses the Geocoding API to get the latitude and longitude of the city.",
-    link: "https://jaidcoding.github.io/Weather-Dashboard/",
-    video: "/videos/WeatherApp.mp4"
+    title: "Mike's Artwork",
+    description: "A website for a friend to showcase his artwork. It uses the React Router to navigate between pages. It also uses the React Icons library to get the icons.",
+    link: "https://jaidcoding.github.io/Mike-Artwork/",
+    video: "/videos/Mike-Art.mp4"
   },
+  {
+    title: "React Portfolio",
+    description: "A portfolio website built with React. It uses the React Router to navigate between pages. It also uses the React Icons library to get the icons.",
+    link: "https://jaidcoding.github.io/Portfolio-React.js/",
+    video: "/videos/React-Portfolio.mp4"
+  }
+  
 ];
 
 export default function Projects() {
@@ -36,22 +43,18 @@ export default function Projects() {
               whileHover={{ y: -5 }}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 group-hover:shadow-xl">
-                <div className="relative aspect-[16/10] w-full bg-neutral-100 flex items-center justify-center">
-                  {project.video ? (
+                <div className="relative w-full aspect-video overflow-hidden">
+                  <div className="absolute inset-0 -top-8">
                     <video
-                      className="w-full h-full object-cover"
                       autoPlay
-                      muted
                       loop
+                      muted
                       playsInline
+                      className="w-full h-[120%] object-cover"
                     >
                       <source src={project.video} type="video/mp4" />
                     </video>
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center">
-                      <span className="text-neutral-400 text-base sm:text-lg md:text-xl">No preview available</span>
-                    </div>
-                  )}
+                  </div>
                 </div>
                 <div className="p-4 sm:p-5 md:p-6 lg:p-8">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 sm:mb-3 text-neutral-800 group-hover:text-neutral-600 transition-colors">
